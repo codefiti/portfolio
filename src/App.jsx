@@ -6,7 +6,7 @@ import {
 
 // Your components
 import Home from './components/Home';
-import About from './components/AboutUs';
+import Portfolio from './components/Portfolio';
 import ContactUs from "./components/ContactUs.jsx";
 import Navbar from "./components/Navbar.jsx";
 import('./App.css');
@@ -20,8 +20,8 @@ function App() {
                 </nav>
 
                 <Routes>
-                    <Route path="/about" element={<About />} />
-                    <Route path="/dashboard" element={<ContactUs />} />
+                    <Route path="/projects" element={<Portfolio />} />
+                    <Route path="/contacts" element={<ContactUs />} />
                     <Route path="/" element={<Home />} />
                 </Routes>
             </div>

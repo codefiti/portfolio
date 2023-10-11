@@ -6,10 +6,14 @@ const Navbar = () => {
 
             </div>
             <div className="navbar-center">
-                <a className="normal-case font-medium text-2xl">Codefiti</a>
+
             </div>
             <div className="navbar-end">
-
+                <div className="flex gap-5">
+                    <a className="" href="/">Home</a>
+                    <a className="" href="/projects">Projects</a>
+                    <a className="" href="/contacts">Contacts</a>
+                </div>
             </div>
         </div>
     )
