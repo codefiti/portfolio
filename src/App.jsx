@@ -2,7 +2,6 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
-    Link
 } from 'react-router-dom';
 
 // Your components
@@ -10,14 +9,14 @@ import Home from './components/Home';
 import About from './components/AboutUs';
 import ContactUs from "./components/ContactUs.jsx";
 import Navbar from "./components/Navbar.jsx";
+import('./App.css');
 
 function App() {
     return (
         <Router>
             <div>
-                {/* Navigation */}
                 <nav>
-                    <Navbar bg="light" expand="lg" />
+                    <Navbar />
                 </nav>
 
                 <Routes>
