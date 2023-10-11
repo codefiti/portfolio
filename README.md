@@ -1,5 +1,5 @@
 # Codefiti Portfolio
-![img.png](img.png)
+![img.png](src/assets/img.png)
 ## Description
 clone repo and run `npm install` to install dependencies
 
