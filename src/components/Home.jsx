@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const Home = () => {
     const [role, setRole] = useState('developers');
@@ -19,11 +19,14 @@ const Home = () => {
             <section className="hero h-full bg-base-200">
                 <div className="backdrop-blur-sm min-h-screen w-full flex justify-start items-center">
                     <div className="max-w-lg m-4">
-                        <h1 className="mb-5 bg-blend-difference text-5xl font-semibold">
+                        <h1 className="mb-5 text-neutral bg-blend-difference text-5xl font-semibold">
                             Hello there
                         </h1>
                         <p className="mb-5 text-3xl">
-                            We are codefiti, we are {role}.
+                            We are codefiti, we are <span className={'text-primary'}>
+                            {role}
+                        </span>
+                            .
                         </p>
                         <button className="btn btn-primary btn-outline ring ring-inset ring-white">Get Started</button>
                     </div>
