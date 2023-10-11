@@ -9,20 +9,20 @@ const Home = () => {
         const interval = setInterval(() => {
             index = index + 1 < roles.length ? index + 1 : 0;
             setRole(roles[index]);
-        }, 2000); // change every 2 seconds
+        }, 3000);
 
         return () => clearInterval(interval); // clear interval on unmount
     }, []);
 
     return (
         <div>
-            <section className="hero min-h-screen bg-base-200">
-                <div className="text-center hero-content">
-                    <div className="max-w-md">
-                        <h1 className="mb-5 text-5xl font-bold">
+            <section className="hero h-full bg-base-200">
+                <div className="backdrop-blur-sm min-h-screen w-full flex justify-start items-center">
+                    <div className="max-w-lg m-4">
+                        <h1 className="mb-5 bg-blend-difference text-5xl font-semibold">
                             Hello there
                         </h1>
-                        <p className="mb-5">
+                        <p className="mb-5 text-3xl">
                             We are codefiti, we are {role}.
                         </p>
                         <button className="btn btn-primary btn-outline ring ring-inset ring-white">Get Started</button>
