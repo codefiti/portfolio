@@ -4,7 +4,7 @@ const Navbar = () => {
         <div className="navbar bg-neutral">
             <div className="navbar-start">
                 <a className="text-2xl font-semibold text-white" href="/">
-                    <img src="../../public/codefiti.png" alt="logo" className="w-8 h-8" />
+                    <img src="codefiti.png" alt="logo" className="w-8 h-8" />
                 </a>
             </div>
             <div className="navbar-center">
