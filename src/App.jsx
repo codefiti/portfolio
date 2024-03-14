@@ -1,16 +1,8 @@
-import React, {useState, useEffect, useRef} from 'react';
-import anime from 'animejs';
+import {useState, useEffect, useRef} from 'react';
 import './App.css'
 
 function App() {
 
-    const [toggled, setToggled] = useState(false);
-    const [toggledOpacity, setToggledOpacity] = useState(false);
-    const [columns, setColumns] = useState(0);
-    const [rows, setRows] = useState(0);
-    const words = ['Inspire', 'Educate', 'Elevate'].map(word => word.split(''));
-    let [currentWordIndex, setCurrentWordIndex] = useState(0);
-    let [currentLetterIndex, setCurrentLetterIndex] = useState(0);
     const [currentSpaces, setCurrentSpaces] = useState(0);
     const directionRef = useRef(true); // Using ref to keep track of direction between renders
     const customCursorRef = useRef(null); // Reference to the custom cursor
@@ -19,7 +11,7 @@ function App() {
     useEffect(() => {
         const intervalId = setInterval(() => {
             let spaces = "_".repeat(currentSpaces);
-            document.title = `FutureSpace${spaces}🚀`;
+            document.title = `CodeFiti${spaces}🚀`;
             setCurrentSpaces(current => {
                 let newSpaces;
                 if (directionRef.current) {
@@ -67,54 +59,9 @@ function App() {
         }
     };
 
-
-    const toggle = () => {
-        setToggled(!toggled);
-    };
-
-    const toggleOpacity = () => {
-        setToggledOpacity(!toggledOpacity);
-    };
-
-    const handleOnClick = (index) => {
-        toggle();
-        toggleOpacity();
-        // Handle animation
-        anime({
-            targets: ".tile",
-            opacity: toggled ? 0 : 1,
-            delay: anime.stagger(50, { grid: [columns, rows], from: index })
-        });
-    };
-
-    useEffect(() => {
-        // Similar to window.onload
-        const setupGrid = () => {
-            // Calculate columns, rows, and set initial state
-            const updateDimensions = () => {
-                const size = window.innerWidth > 800 ? 100 : 50;
-                setColumns(Math.floor(window.innerWidth / size));
-                setRows(Math.floor(window.innerHeight / size));
-            };
-            updateDimensions();
-            window.addEventListener('resize', updateDimensions);
-            return () => window.removeEventListener('resize', updateDimensions);
-        };
-
-        setupGrid();
-    }, []);
-
     const createTiles = () => {
         let tiles = [];
-        for (let i = 0; i < columns * rows; i++) {
-            tiles.push(
-                <div className={`tile animated`} // Add 'animated' class based on toggled state
-                     style={{ opacity: toggled ? 0 : 1 }}
-                     onClick={() => handleOnClick(i)}
-                     key={i}>
-                </div>
-            );
-        }
+        
         return tiles;
     };
 
@@ -138,9 +85,9 @@ function App() {
 
                 <div id="title" className="centered flex-col-aligned">
 
-        <span className="mt">
-            FutureSpace
-        </span>
+            <span className="mt">
+                CodeFiti
+            </span>
                 </div>
 
                 <i id="icon">

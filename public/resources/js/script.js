@@ -93,7 +93,7 @@ window.onresize = createGrid;
 // Dynamic title animation
 let direction = true;
 let title = "🚀";
-let name = 'FutureSpace';
+let name = 'CodeFiti';
 let maxSpaces = 10;
 let currentSpaces = 0;
 
