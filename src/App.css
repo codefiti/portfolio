@@ -145,8 +145,8 @@ html{
   pointer-events: none;
   transition: opacity 1200ms ease;
   z-index: 3;
-  font-family: "Pacifico", cursive !important;
-  font-weight: 400;
+  letter-spacing:5px;
+  font-weight: 800;
   font-style: normal;
 }
 
