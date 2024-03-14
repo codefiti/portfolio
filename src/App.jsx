@@ -1,5 +1,6 @@
 import {useState, useEffect, useRef} from 'react';
 import './App.css'
+import WavesComponent from './Waves';
 
 function App() {
 
@@ -81,17 +82,18 @@ function App() {
                 </div>
                 <div id="tiles">
                     {createTiles()}
+                    <WavesComponent/>
                 </div>
 
                 <div id="title" className="centered flex-col-aligned">
 
             <span className="mt">
-                CodeFiti
+                We are CodeFiti
             </span>
                 </div>
 
                 <i id="icon">
-                    <img className="rocket" src="" alt="" srcSet="./resources/FsOutline.png"/>
+                    <img className="rocket" src="" alt="" srcSet="./codefiti.png"/>
                 </i>
                 <p id="description" className="fancy centered">
                 </p>
