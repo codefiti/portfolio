@@ -23,23 +23,25 @@ function LandingPage() {
             </div>
 
             <div className="title">
-                <p>Welcome</p>
+                <p className="welcome-text">Welcome to</p>
                 <p>CodeFiti</p>
-                <p></p>
             </div>
 
-            <a href="https://dribbble.com/shots/23181733-Blurry-Glassmorphic-Modern-Landing-page" target="_blank"
+            <a href="https://github.com/codefiti/portfolio.git" target="_blank"
                className="button first">
                 <button>View Source</button>
-                <span></span></a>
+                <span></span>
+            </a>
 
-            <a href="https://youtu.be/1pW_sk-2y40" target="_blank" className="button sec">
+            <a href="" target="_blank" className="button sec">
                 <button>Watch Video</button>
-                <span></span></a>
+                <span></span>
+            </a>
 
-            <a href="https://x.com/juxtopposed" target="_blank" className="button third">
+            <a href="https://github.com/Raccoon254" target="_blank" className="button third" rel="noreferrer">
                 <button>Connect</button>
-                <span></span></a>
+                <span></span>
+            </a>
 
             <svg className="top-right" width="219" height="147" viewBox="0 0 219 147" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
