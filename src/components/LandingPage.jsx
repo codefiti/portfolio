@@ -27,7 +27,7 @@ function LandingPage() {
                 <p>CodeFiti</p>
             </div>
 
-            <a href="https://github.com/codefiti/portfolio.git" target="_blank"
+            <a href="https://github.com/codefiti" target="_blank"
                className="button first">
                 <button>View Source</button>
                 <span></span>
