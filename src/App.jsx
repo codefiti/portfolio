@@ -1,4 +1,3 @@
-import "./App.css";
 import LandingPage from "./components/LandingPage.jsx";
 
 function App() {
