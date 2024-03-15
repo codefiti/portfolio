@@ -2,7 +2,7 @@ import NavigationBar from "./NavigationBar.jsx";
 
 function LandingPage() {
     return (
-        <div>
+        <>
             <NavigationBar />
 
             <div className="grid">
@@ -23,7 +23,7 @@ function LandingPage() {
             </div>
 
             <div className="title">
-                <p></p>
+                <p>Welcome</p>
                 <p>CodeFiti</p>
                 <p></p>
             </div>
@@ -61,7 +61,7 @@ function LandingPage() {
                     <circle cx="121.819" cy="83.613" r="1.7774" fill="#323232" stroke="white"/>
                 </g>
             </svg>
-        </div>
+        </>
     )
 }
 
