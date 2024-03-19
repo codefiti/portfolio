@@ -5,6 +5,7 @@ import About from "./components/About";
 import NavigationBar from './components/NavigationBar.jsx';
 import Services from "./components/Services.jsx";
 import Pricing from "./components/Pricing.jsx";
+import Pricing from "./components/Contact.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/services" component={Services} />
           <Route path="/pricing" component={Pricing} />
+          <Route path="/contact" component={Contact} />
         </Routes>
       </>
     </Router>
