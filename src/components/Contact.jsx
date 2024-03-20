@@ -2,7 +2,6 @@ import NavigationBar from "./NavigationBar.jsx";
 function Contact (){
     return(
     <>
-    <NavigationBar />
     <div className="contact-container bg-mytheme-accent">
                 <h1 className="text-mytheme-primary">Get in Touch</h1>
                 <div className="contact-container">

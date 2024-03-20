@@ -2,7 +2,7 @@ import NavigationBar from "./NavigationBar.jsx";
 function Services (){
     return(
     <>
-    <NavigationBar />
+
     <div className="services-container bg-mytheme-accent">
                 <h1 className="text-mytheme-primary">Our comprehensive range of services includes:</h1>
                 <div className="service">
