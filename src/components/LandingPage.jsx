@@ -1,5 +1,3 @@
-import NavigationBar from "./NavigationBar.jsx";
-
 function LandingPage() {
     return (
         <>

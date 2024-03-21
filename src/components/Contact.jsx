@@ -1,4 +1,3 @@
-import NavigationBar from "./NavigationBar.jsx";
 function Contact (){
     return(
     <>
