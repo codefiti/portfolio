@@ -1,0 +1,68 @@
+.my-title{
+    font-size: 2rem !important;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.form-group>label{
+    font-weight: 500;
+    width: 100px;
+    margin-bottom: 0.5rem;
+}
+
+.form-group>input{
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: rgba(244, 244, 244, 0.2);
+}
+
+.form-group>textarea{
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: rgba(244, 244, 244, 0.2);
+}
+
+.custom-button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-container{
+    display: grid;
+    justify-content: center;
+    margin-top: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.btn-container>input{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: white;
+    cursor: pointer;
+}
