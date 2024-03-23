@@ -3,7 +3,7 @@ import NavigationBar from "./NavigationBar.jsx";
 function LandingPage() {
     return (
         <>
-            <NavigationBar />
+    
 
             <div className="grid">
                 <svg className="grid-svg" xmlns="http://www.w3.org/2000/svg" width="982" height="786"
