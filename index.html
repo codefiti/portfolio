@@ -1,13 +1,28 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>CodeFiti</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+</head>
+<body>
+<div class="w-full absolute flex gap-4">
+    <nav class="navbar bg-gray-50 flex gap-2 bg-opacity-10 justify-center items-center w-full">
+        <a href="/" class="sitename">Home</a>
+        <a href="/services" class="">Services</a>
+        <a href="/pricing" class="">Pricing</a>
+        <a href="/about" class="">About-Us</a>
+        <a href="/contact" class="">Contact</a>
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" height="24px"
+             viewBox="0 0 24 24" width="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path
+                    d="M19 9H5c-.55 0-1 .45-1 1s.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1zM5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1z"/>
+        </svg>
+    </nav>
+</div>
+<div class="mt-16" id="root"></div>
+<script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
